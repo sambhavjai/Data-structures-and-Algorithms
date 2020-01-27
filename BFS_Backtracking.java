@@ -33,10 +33,10 @@ public class BFS_Backtracking{
         boolean ans_level=false;
         while(!q.isEmpty())
         {
-            String a=q.remove();
-            if(is_valid(a))
+            s=q.remove();
+            if(is_valid(s))
             {
-                System.out.println(a);
+                System.out.println(s);
                 ans_level=true;
             }
             if(ans_level)
