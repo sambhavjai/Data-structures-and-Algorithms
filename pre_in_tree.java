@@ -25,13 +25,13 @@ public class pre_in_tree{
     {
         if(in_start>in_end)
         return null;
-        node temp=new node(pre[pre_idx]);
+        node temp=new node(pre[pre_idx]); // First value of preorder will be the root always
         pre_idx++;
         if(in_start==in_end)
         return temp;
-        int idx=search(in,in_start,in_end,temp.val);
-        temp.left=func(pre,in,in_start,idx-1);
-        temp.right=func(pre,in,idx+1,in_end);
+        int idx=search(in,in_start,in_end,temp.val); // search for root in inorder
+        temp.left=func(pre,in,in_start,idx-1); // left of root in inorder will be left subtree
+        temp.right=func(pre,in,idx+1,in_end); // right of root in inorder will be right subtree
         return temp;
     }
     public static void inorder(node root)
