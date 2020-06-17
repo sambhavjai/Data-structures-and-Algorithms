@@ -1,4 +1,3 @@
-import java.util.*;
 public class sqrt{
     // Find the floor of sqrt of the given number
     // y = x^1/2;
