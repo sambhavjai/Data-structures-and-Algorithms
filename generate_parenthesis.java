@@ -23,7 +23,7 @@ public class generate_parenthesis{
     {
         ans=new ArrayList<>();
         int n=3;
-        func(3,0,0,"");
+        func(n,0,0,"");
         System.out.println(ans);
     }
 }
