@@ -3,7 +3,7 @@ public class word_ladder{
     // Given a begin word and an end word and a dictionary of words we have to find the minimum steps in which we can reach from begin word to end word
     // in each step we can change only 1 letter and each intermediate word must be present in the dictionary
     // We create a graph of words which differ only by 1 character from the dictionary
-    // then we start from the begin word and apply bfs till the end word maintaining a level value at each word and incrementing it for the nect word
+    // then we start from the begin word and apply bfs till the end word maintaining a level value at each word and incrementing it for the next word
     // we create a graph by taking all the generic forms of each word by having 1 letter missing each time
     // i.e, if we have "hit" the generic form "*it","h*t","hi*" will be present in the key of the graph with edges to all the words which can formed using this generic form
     // then we apply the bfs
